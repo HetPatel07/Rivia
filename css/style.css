@@ -1,0 +1,356 @@
+/*global selector*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+
+/*home part*/
+
+.home {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(28, 25, 65, .8), rgba(28, 25, 65, .8)), url(../images/banner.png);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    transform: translateY(10px);
+    padding: 15px;
+    background-color: rgba(26, 27, 65, .2);
+    position: fixed;
+    right: 0;
+    z-index: 11;
+    background-color: #26BAFF;
+    left: 0;
+    box-shadow: 0px 4px 20px 0px #1a193e;
+
+}
+
+ul {
+    margin: auto;
+    display: table;
+}
+
+li {
+    padding: 15px;
+    float: left;
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    color: #fff;
+    font-size: 14px;
+}
+
+.img {
+    margin: 0 70px;
+    padding: 0px;
+}
+
+.homeContent {
+    width: 60%;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.homeContent p {
+    margin-top: 30px;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.homeContent h1 {
+    font-size: 98px;
+    font-weight: 5px;
+}
+
+span {
+    color: #26BAFF;
+}
+
+.button {
+
+    overflow: auto;
+    display: grid;
+    width: 45%;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    margin: 20px auto;
+}
+
+.button1 {
+    background-color: #26BAFF;
+    padding: 25px 40px;
+    float: left;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: .5s all;
+    border: 1px solid #26BAFF;
+
+}
+
+.button1 a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button1:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+
+}
+
+.button2 {
+    border: 1px solid #fff;
+    padding: 25px 40px;
+    float: left;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.button2::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    content: "";
+    background-color: #26BAFF;
+    transition: .5s all;
+    z-index: -1;
+}
+
+.button2:hover {
+    border: 1px solid #26BAFF;
+    transition: .5s all;
+}
+
+.button2:hover:before {
+    height: 100%;
+    width: 100%;
+
+}
+
+.button2 a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    z-index: 1;
+}
+
+/*about part*/
+.about {
+    width: 100%;
+    margin: 120px 0;
+}
+
+.aboutMain {
+    width: 75%;
+    margin: auto;
+    overflow: auto;
+
+}
+
+.aboutLeft {
+    width: 53%;
+    float: left;
+    margin-right: 2%;
+
+}
+
+.aboutRight {
+    width: 45%;
+    float: right;
+    padding-top: 120px;
+}
+
+.aboutLeft h2 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.underline {
+    margin-top: 20px;
+    height: 5px;
+    width: 120px;
+    background-color: #26BAFF;
+    position: relative;
+}
+
+.underline::before {
+    position: absolute;
+    top: 0;
+    right: -6%;
+    height: 100%;
+    width: 5px;
+    background-color: #26BAFF;
+    content: "";
+}
+
+.underline::after {
+    position: absolute;
+    top: 0;
+    right: -11%;
+    height: 100%;
+    width: 5px;
+    background-color: #26BAFF;
+    content: "";
+}
+
+.aboutButton {
+    overflow: auto;
+    margin-top: 25px;
+}
+
+.aboutButton1:hover {
+    background-color: #1a1b41;
+}
+
+.aboutButton1 a {
+    font-weight: 700;
+}
+
+.aboutButton2 {
+    margin-left: 10px;
+    background-color: #1a1b41;
+    padding: 25px 40px;
+    border: 1px solid #fff;
+    float: left;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.aboutButton2 a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.aboutButton2::before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    content: "";
+    background-color: #26BAFF;
+    transition: .5s all;
+}
+
+
+.aboutButton2:hover {
+    border: 1px solid #26BAFF;
+    transition: .5s all;
+}
+
+.aboutButton2:hover:before {
+    height: 100%;
+    border-color: #26BAFF;
+    width: 100%;
+}
+
+.aboutContent {
+    margin-top: 55px;
+}
+
+.aboutContent p {
+    line-height: 24px;
+    font-size: 14px;
+    color: : #232044;
+}
+
+.abc {
+    margin-top: 40px;
+}
+
+/*services part*/
+
+.services{
+    width: 100%;
+    background-color: #1a1b41;  
+    padding: 100px 0;
+}
+
+.servicesMain{
+    width: 75%;
+    margin: auto;
+}
+
+.servicesMain h3{
+    color: #26BAFF;
+    font-size: 14px;
+}
+
+.servicesMain h2{
+    font-weight: 900;
+    font-size: 32px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.servicesMain p{
+    margin-top: 30px;
+    width: 80%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.aboutGrid{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px ;
+    grid-row-gap: 30px;
+}
+.aboutGrid h3{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 900;
+}
+.aboutGrid p{
+    margin-top: 20px;
+    line-height: 25px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
