@@ -28,7 +28,7 @@ body {
 
 
 nav {
-    transform: translateY(10px);
+    
     padding: 15px;
     background-color: rgba(26, 27, 65, .2);
     position: fixed;
@@ -293,30 +293,30 @@ span {
 
 /*services part*/
 
-.services{
+.services {
     width: 100%;
-    background-color: #1a1b41;  
+    background-color: #1a1b41;
     padding: 100px 0;
 }
 
-.servicesMain{
+.servicesMain {
     width: 75%;
     margin: auto;
 }
 
-.servicesMain h3{
+.servicesMain h3 {
     color: #26BAFF;
     font-size: 14px;
 }
 
-.servicesMain h2{
+.servicesMain h2 {
     font-weight: 900;
     font-size: 32px;
     margin-top: 30px;
     color: #fff;
 }
 
-.servicesMain p{
+.servicesMain p {
     margin-top: 30px;
     width: 80%;
     color: #fff;
@@ -324,26 +324,556 @@ span {
     font-weight: 700;
 }
 
-.aboutGrid{
+.aboutGrid {
     margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 10px ;
+    grid-column-gap: 10px;
     grid-row-gap: 30px;
 }
-.aboutGrid h3{
+
+.aboutGrid h3 {
     margin-top: 20px;
     font-size: 22px;
     font-weight: 900;
 }
-.aboutGrid p{
+
+.aboutGrid p {
     margin-top: 20px;
     line-height: 25px;
     width: 100%;
     font-size: 14px;
     font-weight: 100;
 }
+
+
+
+/*Features part*/
+
+.features {
+    width: 100%;
+}
+
+.featuresMain {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    color: #232044;
+    padding: 100px 0;
+}
+
+.featuresMain h2 {
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.featuresMain > .underline {
+    margin: 20px auto;
+}
+
+.featuresMain p {
+    color:
+        #232044;
+    font-weight: 500;
+    font-size: 16px;
+    width: 60%;
+    margin: auto;
+}
+
+.featuresGrid {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.featuresInner {
+    transition: .5s all;
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+}
+
+.featuresInner::before {
+    position: absolute;
+    content: "";
+    top: -4%;
+    left: -3%;
+    height: 0;
+    width: 0;
+    border-left: 1px solid #26BAFF;
+    border-top: 1px solid #26BAFF;
+    transition: .5s all;
+}
+
+.featuresInner:hover::before {
+    height: 50%;
+    width: 50%;
+}
+
+.featuresInner:hover::after {
+    height: 50%;
+    width: 50%;
+}
+
+.featuresInner::after {
+    transition: .5s all;
+    position: absolute;
+    content: "";
+    bottom: -4%;
+    right: -3%;
+    height: 0;
+    width: 0;
+    border-right: 1px solid #26BAFF;
+    border-bottom: 1px solid #26BAFF;
+}
+
+.featuresInner:hover {
+    background-color: #232044;
+    color: #26BAFF;
+    transition: .5s all;
+}
+
+.featuresInner:hover p {
+    color: white;
+}
+
+.featuresInner h3 {
+    margin-top: 20px;
+}
+
+.featuresInner p {
+    margin-top: 20px;
+    font-stretch: extra-condensed;
+    width: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.icon {
+    font-size: 70px;
+}
+
+/*portfolio part*/
+.portfolio {
+    padding: 120px 0;
+    width: 100%;
+}
+
+.portfolioMain {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.porfolioUpperContent h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.porfolioUpperContent p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.portfolio .underline {
+    margin: 20px auto;
+}
+
+.pNav {
+    margin-top: 80px;
+}
+
+.pNav ul li a {
+    color: #26baff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.pNav ul .span {
+    background-color: #26baff;
+}
+
+.pNav ul .span a {
+    color: #fff;
+
+}
+
+.pNav ul li {
+    background-color: #242047;
+    margin-right: 5px;
+    padding: 20px 15px;
+}
+
+/*pseudo part*/
+.pseudo {
+    width: 100%;
+    height: 330px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    column-gap: 25px;
+    grid-row-gap: 25px;
+    margin: 50px auto 30px auto;
+}
+
+.p2 {
+    margin: 0 auto 30px auto;
+}
+
+.p3 {
+    margin: 0 auto;
+}
+
+.psuedoOne {
+    background-image: url(../images/1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.psuedoFour {
+    background-image: url(../images/1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.psuedoOne::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 0;
+    width: 100%;
+    background-color: #26BAFF;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+    transition: .3s all;
+}
+
+.psuedoFour::before {
+    content: "";
+    position: absolute;
+    top: -3.5%;
+    left: -3%;
+    height: 0%;
+    width: 00%;
+    border-top: 2px solid purple;
+    border-left: 2px solid orange;
+    opacity: .5;
+    z-index: 1;
+    transition: .3s all;
+}
+
+.psuedoFour::after {
+    content: "";
+    position: absolute;
+    bottom: -4%;
+    right: -3%;
+    height: 0%;
+    width: 0%;
+    border-right: 2px solid orange;
+    border-bottom: 2px solid purple;
+    opacity: .5;
+    z-index: 1;
+    transition: .3s all;
+}
+
+.psuedoFour:hover:after {
+    height: 50%;
+    width: 50%;
+}
+
+.psuedoFour:hover:before {
+    height: 50%;
+    width: 50%;
+}
+
+.psuedoOne::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: #26BAFF;
+    opacity: .5;
+    transition: .3s all;
+}
+
+.psuedoOne:hover .pseudoContent {
+    opacity: 1;
+    transition: .5s all;
+    top: 50%;
+}
+
+.psuedoTwo:hover .pseudoContent {
+    opacity: 1;
+    transition: .5s all;
+    top: 50%;
+}
+
+.psuedoThree:hover .pseudoContent {
+    opacity: 1;
+    transition: .5s all;
+    top: 50%;
+}
+
+.psuedoFour:hover .pseudoContent {
+    opacity: 1;
+    transition: .5s all;
+    top: 50%;
+}
+
+.psuedoOne:hover:before {
+    height: 50%;
+    display: ;
+}
+
+.psuedoOne:hover:after {
+    height: 50%;
+}
+
+.pseudoContent {
+    width: 70%;
+    height: 25%;
+    margin: auto;
+    border: 1px solid #fff;
+    position: relative;
+    top: 65%;
+    font-size: 10px;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #fff;
+    line-height: 30px;
+    opacity: 0;
+    z-index: 1;
+}
+
+/*
+
+.pseudoContent::before{
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+.pseudoContent:hover:be
+*/
+
+.pseudoContent p {
+    font-size: 16px;
+}
+
+.pseudoContentInner {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.psuedoTwo {
+    background-image: url(../images/2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.psuedoTwo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 0%;
+    background-color: #26BAFF;
+    opacity: .5;
+    transition: .3s all;
+}
+
+.psuedoTwo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 00%;
+    width: 0%;
+    background-color: #26BAFF;
+    opacity: .5;
+    transition: .3s all;
+}
+
+.psuedoTwo:hover:before {
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    transition-timing-function: ease-out;
+}
+
+.psuedoTwo:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    transition-timing-function: ease-in-out;
+}
+
+.psuedoThree {
+    background-image: url(../images/3.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.psuedoThree::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #26BAFF;
+    height: 0%;
+    width: 0%;
+    opacity: .3;
+    transition: .5s all;
+}
+
+.psuedoThree::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #111;
+    height: 0%;
+    width: 0%;
+    opacity: .1;
+    transition: .2s all;
+
+}
+
+.psuedoThree:hover:before {
+    height: 100%;
+    width: 100%;
+}
+
+.psuedoThree:hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*popularity part*/
+
+.popularity{
+    width: 100%;
+    background-image:linear-gradient(rgba(35,32,68,.8),rgba(35,32,68,.8)),
+    url(../images/promo_bg.jpg);
+    position: relative;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 200px 250px;
+    text-align: center;
+}
+.popularity h3{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 32px;
+}
+.popularity .popgrid .h3{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/*team portion*/
+
+#team{
+    width: 100%;
+    padding: 120px 0 0 0;
+}
+
+.teamMain{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.teamMain h2{
+    font-size: 32px;
+    color: #333;
+}
+.teamMain .underline{
+    margin: 20px auto;
+}
+.teamMain p{
+    width: 68%;
+    font-size: 16px;
+    font-weight: 500;
+    margin: auto;
+}
+.teamGrid{
+    text-align: left;
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    
+}
+.teamImg{
+    overflow: hidden;
+}
+.teamImg img{
+    transition: .5s all;
+    
+}
+.teamGrid1 img:hover{
+    transition: .5s all;
+    transform: scale(1.1);
+}
+
+.teamGrid h3{
+    font-size: 26px;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+}
+
+.teamGrid p{
+    font-size: 16px;
+    margin: 0;
+    font-weight: 100;
+}
+
+.teamChanging{
+    height: 304px;
+}
+.teamImg img{
+    width: 100%;
+    
+}
+
+
+
+
+
 
 
 
