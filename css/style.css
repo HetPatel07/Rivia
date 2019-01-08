@@ -28,7 +28,7 @@ body {
 
 
 nav {
-    
+
     padding: 15px;
     background-color: rgba(26, 27, 65, .2);
     position: fixed;
@@ -778,10 +778,10 @@ span {
 
 /*popularity part*/
 
-.popularity{
+.popularity {
     width: 100%;
-    background-image:linear-gradient(rgba(35,32,68,.8),rgba(35,32,68,.8)),
-    url(../images/promo_bg.jpg);
+    background-image: linear-gradient(rgba(35, 32, 68, .8), rgba(35, 32, 68, .8)),
+        url(../images/promo_bg.jpg);
     position: relative;
     background-attachment: fixed;
     display: grid;
@@ -789,12 +789,14 @@ span {
     padding: 200px 250px;
     text-align: center;
 }
-.popularity h3{
+
+.popularity h3 {
     margin-top: 10px;
     color: #fff;
     font-size: 32px;
 }
-.popularity .popgrid .h3{
+
+.popularity .popgrid .h3 {
     font-size: 26px;
     color: #fff;
     font-weight: 500;
@@ -803,31 +805,34 @@ span {
 
 /*team portion*/
 
-#team{
+#team {
     width: 100%;
-    padding: 120px 0 0 0;
+    padding: 120px 0;
 }
 
-.teamMain{
+.teamMain {
     margin: auto;
     text-align: center;
     width: 70%;
 }
 
-.teamMain h2{
+.teamMain h2 {
     font-size: 32px;
     color: #333;
 }
-.teamMain .underline{
+
+.teamMain .underline {
     margin: 20px auto;
 }
-.teamMain p{
+
+.teamMain p {
     width: 68%;
     font-size: 16px;
     font-weight: 500;
     margin: auto;
 }
-.teamGrid{
+
+.teamGrid {
     text-align: left;
     display: grid;
     margin-top: 80px;
@@ -835,52 +840,266 @@ span {
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 40px;
-    
+
 }
-.teamImg{
+
+.teamImg {
     overflow: hidden;
 }
-.teamImg img{
+
+.teamImg img {
     transition: .5s all;
-    
+
 }
-.teamGrid1 img:hover{
+
+.teamGrid1 img:hover {
     transition: .5s all;
     transform: scale(1.1);
 }
 
-.teamGrid h3{
+.teamGrid h3 {
     font-size: 26px;
     color: #333;
     font-weight: 500;
     margin: 10px 0 5px 0;
 }
 
-.teamGrid p{
+.teamGrid p {
     font-size: 16px;
     margin: 0;
     font-weight: 100;
 }
 
-.teamChanging{
-    height: 304px;
-}
-.teamImg img{
+
+.teamImg img {
     width: 100%;
+
+}
+
+
+/*packages part*/
+
+.packages {
+    width: 100%;
+    
+    padding: 100px 0;
+    overflow: auto;
+    position: relative;
+}
+.packages::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+.packagesMain {
+    width: 70%;
+    margin: auto;
+    overflow: auto;
     
 }
 
+.packagesLeft {
+    width: 40%;
+    height: 555px;
+    float: left;
+    display: table;
+    position: relative;
+}
 
+.packagesContent {
+    /* display: table-cell; */
+    vertical-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+.packagesLeft h2 {
+    font-size: 32px;
+    color: #333;
+}
 
+.packagesLeft p {
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #232044;
+}
 
+.packagesRight {
+    float: right;
+    overflow: auto;
+    z-index: 11;
+    position: relative;
+}
 
+.packagesInner {overflow: auto;}
 
+.packagesOne {
+    height: 500px;
+    width: 320px;
+    background-color: #FcFcFc;
+    float: left;
+    position: relative;
+    top: 25px;
+    left: 100px;
+    z-index: -2;
+    text-align: center;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.packagesOne::after{
+    content: "";
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
 
+.packagesOne:hover{
+    transform: scale(1.1);
+    background-color: red;
+}
+.packagesOneContent{
+    
+}
+.packagesOne::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border-radius: 75px;
+    height: 30%;width: 80%;
+    background-color: #26baff;
+    z-index: -1 ;
+    transform: translate(-6%,-15%) rotate(30deg);
+    opacity: .5;
+}
+.packagesOne ul{
+    
+}
+.packagesOne ul li{
+    padding: 10px;
+    color: #999 !important;
+    font-weight: 500 !important; 
+}
+.packagesOne a{
+    border: 2px solid #A5E0FC !important;
+    color: #999 !important;
+}
+.packagesTwo {
+    float: left;
+    height: 555px;
+    width: 320px;
+    background-color: #fff;
+    z-index: 222;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.packagesTwo::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border-radius: 75px;
+    height: 30%;width: 80%;
+    background-color: #26baff;
+    z-index: -1;
+    transform: translate(-6%,-15%) rotate(30deg);
+}
+.packagesInner h3{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+.packagesInner h4{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+.packagesInner span{
+    color: #fff;
+    font-size: 16px;
+}
+.packagesInner ul {
+    margin-top: 50px;
+}
+.packagesInner ul li{
+    float: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    display: block;
+}
+.packagesInner a{
+    text-align: center;
+    display: block;
+    border: 2px solid #26BAFF;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 50%;
+    margin: auto;
+    padding: 14px 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    transition: .5s all;
+    margin-top: 10px;
+}
+.packagesInner a:hover{
+    background-color: #26baff;
+    color: #fff;
+    transition: .5s all;
+}
 
-
-
-
-
-
+.packagesThree {
+    height: 500px;
+    width: 320px;
+    background-color: #FcFcFc;
+    float: left;
+    position: relative;
+    top: 25px;
+    right: 100px;
+    z-index: -2;
+    text-align: center;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.packagesOneContent{
+    
+}
+.packagesThree::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border-radius: 75px;
+    height: 30%;width: 80%;
+    background-color: #26baff;
+    z-index: -1 ;
+    transform: translate(-6%,-15%) rotate(30deg);
+    opacity: .5;
+}
+.packagesThree ul{
+    
+}
+.packagesThree ul li{
+    padding: 10px;
+    color: #999;
+    font-weight: 500;
+}
+.packagesThree a{
+    border: 2px solid #A5E0FC;
+    color: #999;
+}
 
