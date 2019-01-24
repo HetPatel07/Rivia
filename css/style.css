@@ -456,6 +456,7 @@ span {
 
 .icon {
     font-size: 70px;
+    display: inline-block;
 }
 
 /*portfolio part*/
